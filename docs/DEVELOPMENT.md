@@ -1,4 +1,4 @@
-# FAILFAST AI - Development Guide
+# DEADPOOL AI - Development Guide
 
 ## Quick Start
 
@@ -11,7 +11,7 @@ Open [http://localhost:3000](http://localhost:3000)
 
 ## Project Overview
 
-FAILFAST AI is a cinematic, premium AI SaaS landing page and dashboard for predicting startup failures. Built with Next.js, TailwindCSS, Framer Motion, and GSAP.
+DEADPOOL AI is a cinematic, premium AI SaaS landing page and dashboard for predicting startup failures. Built with Next.js, TailwindCSS, Framer Motion, and GSAP.
 
 ## File Organization
 

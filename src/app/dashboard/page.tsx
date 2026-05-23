@@ -1,23 +1,36 @@
-"use client"
+import { redirect } from "next/navigation"
+import { createClient } from "@/lib/supabase/server"
+import { SiteHeader } from "@/components/layout/site-header"
+import { DashboardOverview } from "@/components/dashboard/dashboard-overview"
+import { ClientCinematicBackground } from "@/components/shared/client-cinematic-background"
+import { LeftSidebar } from "@/components/layout/left-sidebar"
 
-import React from "react"
-import Navigation from "@/components/Navigation"
-import Dashboard from "@/components/Dashboard"
-import { motion } from "framer-motion"
+export default async function DashboardPage() {
+  const supabase = await createClient()
+  let user = null
 
-export default function DashboardPage() {
+  if (supabase) {
+    const { data } = await supabase.auth.getUser()
+    user = data.user
+
+    if (!user) {
+      redirect("/auth/sign-in")
+    }
+  }
+
   return (
-    <main className="min-h-screen bg-black-primary text-text-primary">
-      <Navigation />
-
-      <div className="max-w-7xl mx-auto px-4 pt-24 pb-20">
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-        >
-          <Dashboard />
-        </motion.div>
+    <main className="relative min-h-screen overflow-x-clip bg-[#050505] px-4 pb-20 pt-28 text-[#F5F5F5]">
+      <ClientCinematicBackground />
+      <SiteHeader />
+      <div className="mx-auto w-full max-w-6xl">
+        <div className="grid grid-cols-1 lg:grid-cols-[320px_1fr] gap-8">
+          <div>
+            <LeftSidebar />
+          </div>
+          <div>
+            <DashboardOverview user={user} />
+          </div>
+        </div>
       </div>
     </main>
   )

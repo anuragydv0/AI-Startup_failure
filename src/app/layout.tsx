@@ -1,33 +1,34 @@
 import type { Metadata } from "next"
-import { Space_Grotesk, Inter } from "next/font/google"
+import type { ReactNode } from "react"
+import { ThemeProvider } from "@/components/shared/theme-provider"
 import "./globals.css"
 
-const spaceGrotesk = Space_Grotesk({
-  variable: "--font-space-grotesk",
-  subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
-})
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-  weight: ["400", "500", "600"],
-})
-
 export const metadata: Metadata = {
-  title: "FAILFAST AI - AI Startup Failure Predictor",
-  description: "Upload your pitch deck. Get the brutally honest truth about your startup.",
+  title: "💀 DEADPOOL AI — AI Startup Failure Autopsy",
+  description:
+    "Upload your pitch deck and let DEADPOOL AI brutally analyze why your startup will fail before investors reject it.",
+  openGraph: {
+    title: "💀 DEADPOOL AI — AI Startup Failure Autopsy",
+    description:
+      "Upload your pitch deck and let DEADPOOL AI brutally analyze why your startup will fail before investors reject it.",
+    type: "website",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "💀 DEADPOOL AI — AI Startup Failure Autopsy",
+    description:
+      "Upload your pitch deck and let DEADPOOL AI brutally analyze why your startup will fail before investors reject it.",
+  },
 }
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode
-}) {
+export default function RootLayout({ children }: Readonly<{ children: ReactNode }>) {
   return (
-    <html lang="en" className={`${spaceGrotesk.variable} ${inter.variable}`}>
-      <body className="bg-black-primary text-text-primary antialiased overflow-x-hidden">
-        {children}
+    <html lang="en" suppressHydrationWarning>
+      <body className="min-h-screen overflow-x-hidden bg-[var(--bg)] font-inter text-[var(--text)] antialiased">
+        <ThemeProvider>
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   )

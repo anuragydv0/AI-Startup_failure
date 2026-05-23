@@ -1,4 +1,4 @@
-# ⚡ FAILFAST AI - Quick Reference
+# ⚡ DEADPOOL AI - Quick Reference
 
 ## 🚀 Installation (Copy & Paste)
 

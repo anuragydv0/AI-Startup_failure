@@ -1,6 +1,6 @@
 # Component Snippets & Examples
 
-This file contains reusable code snippets for common patterns in FAILFAST AI.
+This file contains reusable code snippets for common patterns in DEADPOOL AI.
 
 ## Animation Patterns
 

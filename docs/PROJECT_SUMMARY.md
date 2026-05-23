@@ -1,8 +1,8 @@
-# 🚀 FAILFAST AI - Project Summary
+# 🚀 DEADPOOL AI - Project Summary
 
 ## What You've Received
 
-A **complete, production-ready, award-level cinematic AI SaaS landing page and dashboard** for FAILFAST AI - an AI Startup Failure Predictor.
+A **complete, production-ready, award-level cinematic AI SaaS landing page and dashboard** for DEADPOOL AI - an AI DEADPOOL AI Startup Autopsy System.
 
 ## 📦 What's Included
 
@@ -345,7 +345,7 @@ This project is yours to use, modify, and deploy. Customize it for your brand an
 
 ## 🎬 Your Cinematic AI SaaS Awaits
 
-**FAILFAST AI** is ready to launch. Every pixel is polished. Every animation is smooth. Every interaction is intentional.
+**DEADPOOL AI** is ready to launch. Every pixel is polished. Every animation is smooth. Every interaction is intentional.
 
 This is award-level design meets production-grade engineering.
 

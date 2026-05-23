@@ -1,8 +1,8 @@
-# FAILFAST AI - Design System
+# DEADPOOL AI - Design System
 
 ## Brand Identity
 
-**Name**: FAILFAST AI
+**Name**: DEADPOOL AI
 **Tagline**: "Your startup is under investigation"
 **Mood**: Intelligent, Futuristic, Brutal, Premium, Immersive
 **Inspiration**: Apple × Interstellar × Linear.app × Stripe × Vercel

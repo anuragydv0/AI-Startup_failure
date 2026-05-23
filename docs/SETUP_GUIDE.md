@@ -1,8 +1,8 @@
-# FAILFAST AI - Complete Setup & Installation Guide
+# DEADPOOL AI - Complete Setup & Installation Guide
 
 ## 📋 Project Overview
 
-**FAILFAST AI** is a world-class cinematic AI SaaS landing page and dashboard for predicting startup failures. Built with cutting-edge technology stack for award-level design and performance.
+**DEADPOOL AI** is a world-class cinematic AI SaaS landing page and dashboard for predicting startup failures. Built with cutting-edge technology stack for award-level design and performance.
 
 ## 🎯 What's Included
 
